@@ -20,6 +20,8 @@ Now that you have installed, follow this steps to run the project:
   yarn start
 ```
 
+You can also view a deployed version of the project on: https://thriveagrictest.netlify.app
+
 ## 🖥️ Technologies
 
 <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="ReactJS"><br>
