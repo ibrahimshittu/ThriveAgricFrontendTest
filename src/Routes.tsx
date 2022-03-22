@@ -5,6 +5,7 @@ import { User } from './pages/User';
 import { Repos } from './pages/Repos';
 import { Followers } from './pages/Followers';
 import { Following } from './pages/Following';
+import { Organisations } from './pages/Organisations';
 import { AuxUser } from './pages/AuxUser';
 
 export const Routes = (): JSX.Element => {
@@ -16,6 +17,7 @@ export const Routes = (): JSX.Element => {
       <Route path="/followers" component={Followers} />
       <Route path="/following" component={Following} />
       <Route path="/auxuser" component={AuxUser} />
+      <Route path="/organisations" component={Organisations} />
     </Switch>
   );
 };

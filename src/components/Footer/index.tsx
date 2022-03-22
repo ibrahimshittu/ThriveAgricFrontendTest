@@ -5,7 +5,7 @@ import { FaHeart } from 'react-icons/fa';
 export function Footer() {
     return (
         <Container>
-            Developed with<FaHeart className="icon" />by Ian Langkammer Batista
+            Developed with<FaHeart className="icon" />by Ibrahim Shittu
         </Container>
     );
 }

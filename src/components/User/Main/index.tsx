@@ -6,13 +6,15 @@ import { Container, InfosContainer } from './styles';
 
 import { RiGitRepositoryLine } from 'react-icons/ri';
 import { FaUserFriends } from 'react-icons/fa';
+import { CgOrganisation } from 'react-icons/cg';
 
 interface MainProps {
     user: UserData | undefined,
     auxUser: string | undefined,
     userRepos: () => void,
     userFollowers: () => void,
-    userFollowing: () => void
+    userFollowing: () => void,
+    userOrganisation: () => void
 }
 
 export function Main(props: MainProps) {
@@ -47,6 +49,11 @@ export function Main(props: MainProps) {
                     <FaUserFriends />
                     <span>{props.user === undefined ? `${auxUserData?.following}` : `${props.user.following}`} following</span>
                 </div>
+                <div onClick={(e) => props.user === undefined ? e.preventDefault : props.userOrganisation()}>
+                    <CgOrganisation />
+                    <span>Organisations</span>
+                </div>
+                {console.log(props.user)}
             </InfosContainer>
         </Container>
     );

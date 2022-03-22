@@ -7,7 +7,7 @@ import { Footer } from '../../components/Footer';
 import { Container, PageContainer } from './styles';
 
 export function User() {
-    const { user, logOut, lastPage, handleNewUser, userRepos, userFollowers, userFollowing } = useUser();
+    const { user, logOut, lastPage, handleNewUser, userRepos, userFollowers, userFollowing, userOrganisation } = useUser();
 
     return (
         <Container>
@@ -19,6 +19,7 @@ export function User() {
                     userRepos={userRepos}
                     userFollowers={userFollowers}
                     userFollowing={userFollowing}
+                    userOrganisation={userOrganisation}
                 />
             </PageContainer>
             <Footer />

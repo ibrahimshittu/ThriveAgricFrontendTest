@@ -14,7 +14,7 @@ export const Container = styled.div`
 
 export const PageContainer = styled.div`
     width: 80%;
-    max-width: 600px;
+    max-width: 500px;
 
     border-radius: 6px;
     border: 1px solid #21262D;

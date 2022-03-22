@@ -6,6 +6,8 @@ import { BiGitRepoForked, BiStar, BiLinkAlt } from 'react-icons/bi'
 
 export function Main() {
     const { repos } = useUser();
+    console.log("repos",repos)
+
 
     return (
         <Container>

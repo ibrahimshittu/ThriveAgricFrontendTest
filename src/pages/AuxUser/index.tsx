@@ -25,6 +25,7 @@ export function AuxUser() {
                     userRepos={userRepos}
                     userFollowers={userFollowers}
                     userFollowing={userFollowing}
+                    userOrganisation={userFollowing}
                 />
             </PageContainer>
             <Footer />

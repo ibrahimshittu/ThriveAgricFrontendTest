@@ -15,6 +15,7 @@ export interface UserData {
     public_repos: number,
     followers: number,
     following: number,
+    organizations_url: string,
     bio: string,
 }
 
@@ -32,6 +33,11 @@ export interface FollowData {
     login: string,
     avatar_url: string
 }
+export interface organisationData {
+    id: number,
+    login: string,
+    avatar_url: string
+}
 
 interface UserContextData {
     user: UserData,
@@ -43,6 +49,8 @@ interface UserContextData {
     followers: FollowData[],
     userFollowing: () => void,
     following: FollowData[],
+    userOrganisation: () => void,
+    organisation: organisationData[],
     acessUserFollow: (username: string, lastPageName: string) => void,
     auxUser: string | undefined,
     lastPage: string | undefined,
@@ -56,6 +64,7 @@ export function UserProvider({ children }: UserProviderProps): JSX.Element {
     const [repos, setRepos] = useState<ReposData[]>([{}] as ReposData[]);
     const [followers, setFollowers] = useState<FollowData[]>([{}] as FollowData[]);
     const [following, setFollowing] = useState<FollowData[]>([{}] as FollowData[]);
+    const [organisation, setOrganisation] = useState<organisationData[]>([{}] as organisationData[]);
     const [auxUser, setAuxUser] = useState<string | undefined>();
     const [lastPage, setLastPage] = useState<string | undefined>();
     const history = useHistory();
@@ -107,6 +116,16 @@ export function UserProvider({ children }: UserProviderProps): JSX.Element {
             toast.error('Something went wrong :(', {theme: "colored"});
         }
     }
+    async function userOrganisation() {
+        try {
+            await api.get(`users/${user.login}/orgs`)
+                .then(response => setOrganisation(response.data))
+                .then(() => history.push('/organisations'))
+
+        } catch {
+            toast.error('Something went wrong :(', {theme: "colored"});
+        }
+    }
 
     async function acessUserFollow(username: string, lastPageName: string) {
         setAuxUser(username);
@@ -136,6 +155,8 @@ export function UserProvider({ children }: UserProviderProps): JSX.Element {
                 followers,
                 userFollowing,
                 following,
+                userOrganisation,
+                organisation,
                 acessUserFollow,
                 auxUser,
                 lastPage,

@@ -7,14 +7,14 @@ export const Container = styled.div`
     justify-content: center;
 
     min-height: calc(100vh - 2rem);
-    max-width: 100vw;
+    max-width: 200vw;
     
     padding: 1rem 0rem;
 `;
 
 export const PageContainer = styled.div`
     width: 80%;
-    max-width: 500px;
+    max-width: 600px;
 
     border-radius: 6px;
     border: 1px solid #21262D;
