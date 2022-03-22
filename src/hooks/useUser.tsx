@@ -36,7 +36,8 @@ export interface FollowData {
 export interface organisationData {
     id: number,
     login: string,
-    avatar_url: string
+    avatar_url: string,
+    description: string
 }
 
 interface UserContextData {

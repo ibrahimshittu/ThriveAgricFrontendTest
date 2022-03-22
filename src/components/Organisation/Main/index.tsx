@@ -15,17 +15,24 @@ export function Main(props: MainProps) {
     return (
         <Container>
             <ul>
-                {props.organisation.map((follower) => {
+                {props.organisation.map((organisation) => {
                     return (
-                        <li key={follower.id}>
+                        <li key={organisation.id}>
                             <div className="avatar-container">
-                                <img src={follower.avatar_url} alt="User Avatar - Github" />
-                            </div>
-                            <div className="name-icon">
-                                <h1>{follower.login}</h1>
                                 <button onClick={(e) => {
                                         e.preventDefault();
-                                        props.acessUser(follower.login, props.page);
+                                        props.acessUser(organisation.login, props.page);
+                                    }
+                                }
+                                >
+                                    <img src={organisation.avatar_url} alt="Org Avatar - Github" />
+                                </button>
+                            </div>
+                            <div className="name-icon">
+                                <h1>{organisation.login}</h1>
+                                <button onClick={(e) => {
+                                        e.preventDefault();
+                                        props.acessUser(organisation.login, props.page);
                                     }
                                 }
                                 >

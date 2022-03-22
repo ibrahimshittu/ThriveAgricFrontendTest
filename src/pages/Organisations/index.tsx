@@ -6,7 +6,6 @@ import { Footer } from '../../components/Footer';
 
 import { Container, PageContainer } from './styles';
 
-import { FaUserFriends } from 'react-icons/fa';
 import { CgOrganisation } from 'react-icons/cg';
 
 export function Organisations() {
@@ -16,14 +15,14 @@ export function Organisations() {
         <Container>
             <PageContainer>
                 <Header
-                    directory={"following"}
-                    icon={<FaUserFriends className="header-icon" />}
+                    directory={"organisations"}
+                    icon={<CgOrganisation className="header-icon" />}
                 />
                 <Main
                     profileIcon={<CgOrganisation size={20} />}
                     organisation={organisation}
                     acessUser={acessUserFollow}
-                    page={"following"}
+                    page={"organisations"}
                 />
             </PageContainer>
             <Footer />

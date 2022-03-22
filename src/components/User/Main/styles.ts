@@ -37,6 +37,7 @@ export const InfosContainer = styled.div`
     div {
         width: 25%;
         display: flex;
+        margin: 5px;
         flex-direction: column;
         align-items: center;
         justify-content: center;

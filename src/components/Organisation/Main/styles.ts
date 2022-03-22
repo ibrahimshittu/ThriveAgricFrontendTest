@@ -41,6 +41,14 @@ export const Container = styled.div`
                 margin-right: 1rem;
                 width: 40%;
 
+                button {
+                    background: transparent;
+                    outline: none;
+                    border: 0px;
+                    margin: 0;
+                    padding: 0;
+                }
+
                 img {
                     width: 100%;
                     height: auto;
