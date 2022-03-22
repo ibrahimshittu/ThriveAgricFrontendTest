@@ -2,7 +2,7 @@
 
 > This is a ReactJS project using Typescript for thr frontend Developer role for Thrive Agric and you can search for github users and acess their informations about repositories, followers and organization!
 
-## 🚀 How can I install GitHub Explorer?
+## 🚀 How can I install?
 
 If you want to install, follow this steps:
 
