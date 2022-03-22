@@ -12,16 +12,6 @@ If you want to install, follow this steps:
   yarn
 ```
 
-### 🤔 Commands
-
-Maybe you are thinking, "🤔 What are this terminal commands doing?", but don't be worried!
-I'm gonna show you one by one what are their purpose:
-
-1. git init : initializes or reboots a repository
-2. git clone : clone the repository on your local machine
-3. cd 'file_name': enter on the 'file_name' directory
-4. yarn: install all project's dependecies
-
 ## ☕ How can I use ?
 
 Now that you have installed, follow this steps to run the project:
