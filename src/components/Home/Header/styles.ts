@@ -8,9 +8,10 @@ export const Container = styled.div`
     width: 100%;
 
     img {
-        width: 20%;
+        width: 30%;
         height: auto;
         opacity: 0.8;
+        border-radius: 50%;
         transition: opacity 0.2s;
     }
 

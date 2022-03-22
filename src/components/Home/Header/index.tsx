@@ -1,12 +1,12 @@
-import GithubLogoImg from '../../../assets/github-icon.png';
+import LogoImg from '../../../assets/thriveagric.png';
 
 import { Container } from './styles';
 
 export function Header() {
     return (
         <Container>
-            <img src={GithubLogoImg} alt="Github Logo" />
-            <h1>GitHub Explorer</h1>
+            <img src={LogoImg} alt="Github Logo" />
+            <h1>Github Explorer</h1>
         </Container>
     );
 }

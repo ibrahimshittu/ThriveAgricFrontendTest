@@ -4,7 +4,7 @@
 
 ## 🚀 How can I install GitHub Explorer?
 
-If you want to install GitHub Explorer, follow this steps:
+If you want to install, follow this steps:
 
 ```
   git init
@@ -24,7 +24,7 @@ I'm gonna show you one by one what are their purpose:
 
 ## ☕ How can I use ?
 
-Now that you have installed the GitHub Explorer, follow this steps to run the project:
+Now that you have installed, follow this steps to run the project:
 
 ```
   yarn start
